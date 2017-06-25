@@ -45,7 +45,7 @@ local knownParams = {
 		{ DynamicList,	"setenv",						{ "VAR1 value1", "VAR2 value2" },								translate("Pass environment variables to script") },
 		{ Value,		"tls_verify",					"/usr/bin/ovpn-tlsverify",										translate("Shell command to verify X509 name") },
 		{ Value,		"client_connect",				"/usr/bin/ovpn-clientconnect",									translate("Run script cmd on client connection") },
-		{ Flag,			"client_disconnect",			0,																translate("Run script cmd on client disconnection") },
+		{ Value,		"client_disconnect",				"/usr/bin/ovpn-clientdisconnect",								translate("Run script cmd on client disconnection") },
 		{ Value,		"learn_address",				"/usr/bin/ovpn-learnaddress",									translate("Executed in server mode whenever an IPv4 address/route or MAC address is added to OpenVPN's internal routing table") },
 		{ Value,		"auth_user_pass_verify",		"/usr/bin/ovpn-userpass via-env",								translate("Executed in server mode on new client connections, when the client is still untrusted") },
 		{ ListValue,	"script_security",				{ 0, 1, 2, 3 },													translate("Policy level over usage of external programs and scripts") },
